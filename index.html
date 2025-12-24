@@ -132,13 +132,13 @@
 			const planeMaterial = new THREE.MeshPhongMaterial({ color: 0x808080 });
 			const plane = new THREE.Mesh(planeGeometry, planeMaterial);
 			plane.rotation.x = -Math.PI / 2;
-			plane.position.y = -30; // Поднял пол
+			plane.position.y = -10; // Поднял пол
 			plane.receiveShadow = true;
 			scene.add(plane);
 
 			// Добавляем вспомогательную сетку
 			const gridHelper = new THREE.GridHelper(500, 20, 0x0000ff, 0x808080);
-			gridHelper.position.y = -30; // Поднял сетку
+			gridHelper.position.y = -10; // Поднял сетку
 			scene.add(gridHelper);
 		}
 
